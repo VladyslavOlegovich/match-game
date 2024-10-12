@@ -1,0 +1,80 @@
+.playerContainer {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.playerInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.playerIcon {
+  font-size: 7rem;
+}
+
+.playerName {
+  font-weight: bold;
+}
+
+.historyContainer {
+  margin-top: 10px;
+}
+
+.playerHistory {
+  display: block;
+  font-size: 24px;
+}
+
+.totalMatches {
+  display: block;
+  color: #ff6b6b;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.historyDifference {
+  color: green;
+  font-size: 14px;
+}
+
+.moveHistory {
+  margin-top: 20px;
+}
+
+.historyTitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.historyList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.historyItem {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .playerIcon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .playerHistory {
+    font-size: 1rem;
+  }
+  .totalMatches {
+    font-size: 2rem;
+  }
+  .playerContainer {
+    padding: 4px;
+  }
+}

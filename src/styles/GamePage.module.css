@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.matchCounter {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.playerGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.versus {
+  font-size: 3rem;
+}
+
+.player {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.playerName {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.playerMatches {
+  font-size: 1.2rem;
+  color: #ff6b6b;
+  margin-top: 0.5rem;
+}
+
+.playButtonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.playButton {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.playButton:hover {
+  background-color: #388e3c;
+}
+
+.playButton:disabled {
+  background-color: #555555;
+  cursor: not-allowed;
+}
+
+.resetButton {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resetButton:hover {
+  background-color: #e53935;
+}
+
+@media (max-width: 768px) {
+  .playerGroup {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .matchCounter {
+    font-size: 3.5rem;
+  }
+
+  .versus {
+    font-size: 2.5rem;
+  }
+
+  .playButton {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .resetButton {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .matchCounter {
+    font-size: 2.8rem;
+  }
+
+  .versus {
+    font-size: 2rem;
+  }
+
+  .playerGroup {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .player {
+    width: 100%;
+  }
+
+  .playButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .resetButton {
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+  }
+  .versus {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 0;
+  }
+}
